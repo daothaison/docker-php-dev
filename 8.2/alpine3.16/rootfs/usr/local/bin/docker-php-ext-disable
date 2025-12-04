@@ -1,4 +1,0 @@
-#!/bin/sh
-
-# remove config file created by docker-php-ext-enable
-rm /usr/local/etc/php/conf.d/docker-php-ext-$1.ini
