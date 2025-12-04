@@ -1,6 +1,6 @@
 # NOTE: This file was generated via generate.sh. Don't edit it directly
 
-FROM daothaison/php:8.4.15-nginx-alpine3.21
+FROM ghcr.io/daothaison/php:8.4.15-nginx-alpine3.21
 
 ENV COMPOSER_VERSION=2.4.1
 

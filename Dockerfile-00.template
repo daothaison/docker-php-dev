@@ -1,4 +1,4 @@
-FROM daothaison/php:{{ version }}-nginx-{{ distro_release }}
+FROM ghcr.io/daothaison/php:{{ version }}-nginx-{{ distro_release }}
 
 ENV COMPOSER_VERSION={{ composer_version }}
 
