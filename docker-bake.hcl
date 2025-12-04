@@ -20,8 +20,6 @@ target "8_4_15-alpine3_21" {
         "${REGISTRY}/${REPO}:8.4-alpine",
         "${REGISTRY}/${REPO}:8.4.15-alpine3.21",
         "${REGISTRY}/${REPO}:8.4.15-alpine",
-        "${REGISTRY}/${REPO}:alpine3.21",
-        "${REGISTRY}/${REPO}:alpine",
     ]
 }
 
