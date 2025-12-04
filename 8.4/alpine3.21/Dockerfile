@@ -9,7 +9,8 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 COPY rootfs /
 RUN apk add --no-cache git
 
-RUN apk add --update linux-headers --no-cache --virtual .ext-deps autoconf gcc musl-dev make \
+RUN apk add --update linux-headers --no-cache --virtual .ext-deps autoconf gcc musl-dev make ldb-dev libldap openldap-dev \
     && pecl install xdebug pcov \
-    && docker-php-ext-enable xdebug pcov \
+    && docker-php-ext-install ldap \
+    && docker-php-ext-enable xdebug pcov ldap \
     && apk del .ext-deps
