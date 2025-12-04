@@ -1,6 +1,6 @@
 # NOTE: This file was generated via generate.sh. Don't edit it directly
 
-FROM sunasteriskrnd/php:8.4.15-nginx-alpine3.21
+FROM daothaison/php:8.4.15-nginx-alpine3.21
 
 ENV COMPOSER_VERSION=2.4.1
 
